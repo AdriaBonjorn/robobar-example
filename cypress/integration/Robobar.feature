@@ -9,13 +9,14 @@ Feature: Robobar cart
     Given user opens robobar website
     When user adds a cola
     And user adds a cola
-    Then total should be "€2.50"
+    Then total should be €2.50
 
   Scenario: user adds one beer
     Given user opens robobar website
     When user adds a beer
     Then total should be €2.00
 
+  @focus
   Scenario Outline: user buys several colas
     Given user opens robobar website
     When user adds <n> cola
@@ -45,7 +46,7 @@ Feature: Robobar cart
       | 1 | 3.00  |
       | 2 | 6.00  |
 
-  Scenario Outline: user buy several drinks
+  Scenario Outline: user buy several drinks 1
     Given user opens robobar website
     When user adds <cola> cola
     And user adds <beer> beers
@@ -56,7 +57,7 @@ Feature: Robobar cart
       | 0    | 1    | 2.00  |
       | 1    | 1    | 3.25  |
 
-  Scenario Outline: user buy several drinks
+  Scenario Outline: user buy several drinks 2
     Given user opens robobar website
     When user adds <cola> cola <beer> beer <wine> wine
     Then total should be €<total>
@@ -64,7 +65,7 @@ Feature: Robobar cart
       | cola | beer | wine | total |
       | 1    | 0    | 0    | 1.25  |
 
-  Scenario Outline: user buy several drinks
+  Scenario Outline: user buy several drinks 3
     Given user opens robobar website
     When user adds <cola> cola <beer> beer <wine> wine
     Then total should be €<total>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="27.8980" tests="20" failures="8" skipped="6">
+  <testsuite name="Root Suite" timestamp="2022-02-17T09:37:23" tests="0" file="cypress/integration/Robobar.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Robobar cart" timestamp="2022-02-17T09:37:24" tests="20" time="27.8980" failures="8">
+    <testcase name="Robobar cart user buys several colas (example #1)" time="5.1070" classname="user buys several colas (example #1)">
+    </testcase>
+    <testcase name="Robobar cart user buys several colas (example #2)" time="4.0630" classname="user buys several colas (example #2)">
+    </testcase>
+    <testcase name="Robobar cart user buys several colas (example #3)" time="0.0000" classname="user buys several colas (example #3)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€3.75&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€3.75'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buys several colas (example #4)" time="0.0000" classname="user buys several colas (example #4)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€5.00&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€5.00'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buys several beers (example #1)" time="3.8680" classname="user buys several beers (example #1)">
+    </testcase>
+    <testcase name="Robobar cart user buys several beers (example #2)" time="0.0000" classname="user buys several beers (example #2)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€4.00&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€4.00'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buys several wines (example #1)" time="0.0000" classname="user buys several wines (example #1)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€3.00&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€3.00'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buys several wines (example #2)" time="0.0000" classname="user buys several wines (example #2)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€6.00&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€6.00'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 1 (example #1)" time="3.9120" classname="user buy several drinks 1 (example #1)">
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 1 (example #2)" time="6.4750" classname="user buy several drinks 1 (example #2)">
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 1 (example #3)" time="0.0000" classname="user buy several drinks 1 (example #3)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€3.25&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€3.25'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 2 (example #1)" time="4.4730" classname="user buy several drinks 2 (example #1)">
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 3 (example #1)" time="0.0000" classname="user buy several drinks 3 (example #1)">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#ageInput`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ageInput`, but never found it.
+    at ageInput (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:85:13)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:128:3)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+    <testcase name="Robobar cart user buy several drinks 3 (example #2)" time="0.0000" classname="user buy several drinks 3 (example #2)">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;th.ng-binding&gt;&apos; to contain text &apos;€function toString() { [native code] }&apos;, but the text was &apos;€3.25&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<th.ng-binding>' to contain text '€function toString() { [native code] }', but the text was '€3.25'
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:117:15)
+    at Context.resolveAndRunStepDefinition (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:10504:29)
+    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/Robobar.feature:9825:35)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
