@@ -1,11 +1,19 @@
 pipeline {
     agent any
+
+    tools {nodejs "node"}
+
     stages {
         stage('Clean') {
             steps {
-                sh './npm run clean'
+                sh 'npm clean'
             }
         }
+        stage('Build') {
+                    steps {
+                        sh 'npm run build'
+                    }
+                }
         stage('Test') {
             sh './npm run test'
 
