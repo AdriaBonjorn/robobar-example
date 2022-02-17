@@ -7,9 +7,7 @@ pipeline {
             }
         }
         stage('Test') {
-            // parallelize browser tests
-
-                        sh './npm run test'
+            sh './npm run test'
 
             }
             post {
