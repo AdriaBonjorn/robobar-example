@@ -8,17 +8,9 @@ pipeline {
         }
         stage('Test') {
             // parallelize browser tests
-            parallel {
-                stage('test: chrome') {
-                    steps {
+
                         sh './npm run test'
-                    }
-                }
-                stage('test: firefox') {
-                    steps {
-                        sh './npm run testFirefox'
-                    }
-                }
+
             }
             post {
                 always {
