@@ -1,23 +1,19 @@
 pipeline {
     agent any
 
-    tools {nodejs "node"}
+
 
     stages {
-        stage('Clean') {
-            steps {
-                sh 'npm clean'
-            }
-        }
-        stage('Build') {
-                    steps {
-                        sh 'npm run build'
+
+    stage('Test') {
+                steps {
+                    nodejs("node-14.18.2"){
+                    sh 'yarn install'
+                    sh 'yarn cy:ci'
                     }
                 }
-        stage('Test') {
-            sh './npm run test'
-
             }
+
             post {
                 always {
                     junit 'results/*.xml'
