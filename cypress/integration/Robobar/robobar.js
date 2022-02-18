@@ -58,6 +58,10 @@ function confirmationMessage() {
 function ageInput() {
     return cy.get('#ageInput')
 }
+
+function alertMessage() {
+    return cy.get('.alert > .ng-binding')
+}
 //Step definition
 
 
@@ -83,7 +87,7 @@ Then('total should be €1.25',() => {
 
 Then('total should be €2.00',() => {
     totalText()
-        .should("contain.text", "€2.00")
+        .should("contain", "€2.00")
 })
 
 Then('total should be €2.50',() => {
@@ -104,8 +108,10 @@ When('user adds {int} wines',(n) => {
 })
 
 Then('total should be €{float}',(totalcost) => {
+    let conc="€"
+        conc.concat("",totalcost.toString())
     totalText()
-        .should("contain.text", "€" + totalcost.toString)
+        .should("contain", conc)
 })
 
 When('user adds {int} cola {int} beer {int} wine',(colas, beers, wines) => {
@@ -119,14 +125,24 @@ And('user checks out', ()=>{
 })
 
 Then('user is {int} years old', (age)=>{
-    ageInput()
-        .type(age)
+
+
+        ageInput()
+            .type(age)
+
 })
 
 Then('robobar confirms order', ()=>{
     confirmationMessage().should("contain.text", "Coming right up! ~bzzzt~")
 })
 
+But('checkout result is "{string}"', (expected)=>{
+    if(expect === 'fail')  {
+        alertMessage().should('be.visible')
+    }else{
+        confirmationMessage().should("contain.text", "Coming right up! ~bzzzt~")
+    }
+})
 
 
 

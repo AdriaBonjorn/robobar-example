@@ -16,7 +16,7 @@ Feature: Robobar cart
     When user adds a beer
     Then total should be €2.00
 
-  @focus
+
   Scenario Outline: user buys several colas
     Given user opens robobar website
     When user adds <n> cola
