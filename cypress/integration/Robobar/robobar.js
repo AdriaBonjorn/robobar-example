@@ -126,11 +126,12 @@ And('user checks out', ()=>{
 
 Then('user is {int} years old', (age)=>{
 
-
         ageInput()
             .type(age)
 
 })
+
+
 
 Then('robobar confirms order', ()=>{
     confirmationMessage().should("contain.text", "Coming right up! ~bzzzt~")
